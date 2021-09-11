@@ -52,7 +52,10 @@
        }
        
        .navbar li a:hover {
-           color: rgb(76, 219, 183);
+           color: black;
+           border: ivory;
+           border-radius: 10px;
+           background-color: white;
        }
        
        .item3 {
@@ -60,6 +63,21 @@
            right: 15rem;
            top: 5.5rem;
            border: solid 3px;
+       }
+       
+       #main-bar {
+           font-size: 18px;
+           color: white;
+           display: block;
+           text-align: center;
+           width: 100rem;
+           margin: 0px auto;
+           border: red solid 2px;
+       }
+       
+       #main-bar .primary-text {
+           font-size: 50px;
+           color: white;
        }
        
        @media (max-width:998px) {
@@ -78,7 +96,7 @@
                padding: 0px 7.4rem;
            }
            .navbar li a {
-               color: #b4ffee;
+               color: blue;
                font-size: 3.6rem;
            }
            .item1 {
@@ -88,5 +106,13 @@
            }
            .item1 img {
                width: 21.4rem;
+           }
+           #main-bar {
+               font-size: 13px;
+               color: white;
+               display: block;
+               text-align: center;
+               width: 100rem;
+               margin: 266px auto;
            }
        }
