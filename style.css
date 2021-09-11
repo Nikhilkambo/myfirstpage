@@ -65,6 +65,9 @@
            html {
                font-size: 55%;
            }
+           body {
+               background-repeat: repeat-y;
+           }
            .item2 {
                position: absolute;
                right: 28px;
@@ -72,6 +75,17 @@
            }
            .navbar li {
                padding: 0px 7.4rem;
+           }
+           .navbar li a {
+               color: #b4ffee;
+           }
+           .item1 {
+               position: absolute;
+               left: 15.4rem;
+               top: 2.4rem;
+           }
+           .item1 img {
+               width: 21.4rem;
            }
        }
        
