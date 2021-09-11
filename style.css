@@ -61,32 +61,22 @@
            border: solid 3px;
        }
        
-       .bar {
-           /* display: none; */
-           width: 35px;
-           height: 5px;
-           background-color: #ffffff;
-           margin: 6px 0;
-           cursor: pointer;
-       }
-       
        @media (max-width:998px) {
            html {
                font-size: 55%;
            }
-           .navbar li a {
-               display: none;
+           .item2 {
+               position: absolute;
+               right: 28px;
+               top: 7px;
            }
-           .bar {
-               display: block;
+           .navbar li {
+               padding: 0px 7.4rem;
            }
        }
        
        @media (max-width:768px) {
            html {
                font-size: 45%;
-           }
-           .bar {
-               display: block;
            }
        }
