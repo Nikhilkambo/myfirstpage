@@ -71,14 +71,15 @@
            }
            .item2 {
                position: absolute;
-               right: 28px;
-               top: 7px;
+               right: 0rem;
+               top: 0rem;
            }
            .navbar li {
                padding: 0px 7.4rem;
            }
            .navbar li a {
                color: #b4ffee;
+               font-size: 3.6rem;
            }
            .item1 {
                position: absolute;
