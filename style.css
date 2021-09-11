@@ -37,6 +37,7 @@
            text-align: center;
            padding: 0px 2.4rem;
            cursor: pointer;
+           color: rgb(8, 20, 133);
        }
        
        .navbar li a {
@@ -86,11 +87,5 @@
            }
            .item1 img {
                width: 21.4rem;
-           }
-       }
-       
-       @media (max-width:768px) {
-           html {
-               font-size: 45%;
            }
        }
