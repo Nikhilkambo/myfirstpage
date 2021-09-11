@@ -1,106 +1,92 @@
-body {
-    margin: 3px;
-    width: 100%;
-}
-
-#header {
-    background-color: rgb(208 208 208);
-    height: 7em;
-    width: 100%;
-}
-
-.navlogo {
-    float: left;
-    width: 14%;
-}
-
-.navlogo img {
-    width: 25%;
-    margin-left: 178px;
-    border-radius: 100px;
-}
-
-.logo {
-    text-align: center;
-    margin-left: 171px;
-    margin-top: 3px;
-}
-
-@media only screen and (min-width:600px) {
-    .navitem {
-        float: right;
-        padding: 0px;
-        padding-right: 56px;
-    }
-    .navitem li {
-        list-style: none;
-        display: inline-block;
-        font-size: 18px;
-        font-family: 'Roboto', sans-serif;
-        padding-top: 30px;
-    }
-    .navitem li a {
-        margin: 3px 3px;
-        padding: 10px;
-        color: #000;
-        font: sans-serif;
-        text-decoration: none;
-    }
-    .navitem li a:hover {
-        background-color: cornsilk;
-        color: crimson;
-        border-radius: 13px;
-    }
-}
-
-@media only screen and (min-width:320px) {
-    .navlogo {
-        float: left;
-    }
-    .navlogo img {
-        width: 30%;
-    }
-    .navitem {
-        float: right;
-        padding: 2px;
-    }
-    .navitem ul {
-        margin: 0px;
-        padding: 9px;
-    }
-    .navitem li {
-        font-size: 15px;
-        list-style: none;
-    }
-    .navitem li a {
-        margin: 5px 3px;
-        padding: 10px;
-        color: #000;
-        font: sans-serif;
-        text-decoration: none;
-    }
-    .navitem li:hover {
-        background-color: cadetblue;
-        border-radius: 20px;
-    }
-}
-
-#slider {}
-
-#slider img {
-    width: 100%;
-    height: 30em;
-}
-
-#mainbar {
-    border: solid 3px;
-}
-
-.nk {
-    margin-top: 10px;
-    background-color: yellowgreen;
-}
-
-button:hover {
-    background-color: violet;
-}
+       html {
+           font-size: 62.5%;
+       }
+       
+       body {
+           margin: 0px;
+           padding: 0px;
+           background: url(img/1.jpg);
+           background-repeat: no-repeat;
+       }
+       
+       #header {}
+       
+       .item1 {
+           position: absolute;
+           left: 15.4rem;
+           top: 2.4rem;
+           width: 9.6rem;
+           display: inline-block;
+       }
+       
+       .item1 img {
+           width: 9.4rem;
+           border-radius: 9.5rem;
+       }
+       
+       .item2 {
+           margin: 5.2rem auto;
+           display: block;
+           width: 38%;
+       }
+       
+       .navbar {}
+       
+       .navbar li {
+           display: inline-block;
+           text-align: center;
+           padding: 0px 2.4rem;
+           cursor: pointer;
+       }
+       
+       .navbar li a {
+           font-size: 2.8rem;
+           font-family: 'Roboto', sans-serif;
+           text-decoration: none;
+       }
+       
+       .navbar li a.active {
+           color: rgb(76, 219, 183);
+           text-decoration: underline;
+       }
+       
+       .navbar li a:hover {
+           color: rgb(76, 219, 183);
+       }
+       
+       .item3 {
+           position: absolute;
+           right: 15rem;
+           top: 5.5rem;
+           border: solid 3px;
+       }
+       
+       .bar {
+           /* display: none; */
+           width: 35px;
+           height: 5px;
+           background-color: #ffffff;
+           margin: 6px 0;
+           cursor: pointer;
+       }
+       
+       @media (max-width:998px) {
+           html {
+               font-size: 55%;
+           }
+           .navbar li a {
+               display: none;
+           }
+           .bar {
+               display: block;
+           }
+       }
+       
+       @media (max-width:768px) {
+           html {
+               font-size: 45%;
+           }
+           .bar {
+               display: block;
+           }
+       }
