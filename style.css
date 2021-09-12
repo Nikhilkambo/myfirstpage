@@ -5,19 +5,13 @@
        body {
            margin: 0px;
            padding: 0px;
-<<<<<<< HEAD
            /* background: url(img/1.jpg); */
-=======
->>>>>>> 6b161192f3dafe7eef7ca7e1a4838a0d80e6af83
        }
        
        body::before {
            content: "";
-<<<<<<< HEAD
            background: url(img/1.jpg);
-=======
            background: url(img/1.jpg) no-repeat;
->>>>>>> 6b161192f3dafe7eef7ca7e1a4838a0d80e6af83
            position: absolute;
            height: 100%;
            top: 0px;
@@ -92,16 +86,12 @@
            width: 100rem;
            margin: 0px auto;
            border: red solid 2px;
-<<<<<<< HEAD
            border-radius: 13px;
-=======
->>>>>>> 6b161192f3dafe7eef7ca7e1a4838a0d80e6af83
        }
        
        #main-bar .primary-text {
            font-size: 50px;
            color: white;
-<<<<<<< HEAD
        }
        
        #main-bar .secondary-text {
@@ -119,8 +109,6 @@
        #gallery img {
            width: 280px;
            padding: 2px 52px;
-=======
->>>>>>> 6b161192f3dafe7eef7ca7e1a4838a0d80e6af83
        }
        
        @media (max-width:998px) {
@@ -157,7 +145,6 @@
                text-align: center;
                width: 100rem;
                margin: 266px auto;
-<<<<<<< HEAD
            }
            #gallery {
                display: block;
@@ -166,7 +153,5 @@
                width: 100rem;
                padding: 4px 8px;
                margin: 17px;
-=======
->>>>>>> 6b161192f3dafe7eef7ca7e1a4838a0d80e6af83
            }
        }
