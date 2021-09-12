@@ -5,8 +5,7 @@
        body {
            margin: 0px;
            padding: 0px;
-           background: url(img/1.jpg);
-           background-repeat: no-repeat;
+           background-color: rgb(46, 46, 46);
        }
        
        #header {}
@@ -108,7 +107,7 @@
                width: 21.4rem;
            }
            #main-bar {
-               font-size: 13px;
+               font-size: 21px;
                color: white;
                display: block;
                text-align: center;
