@@ -5,8 +5,19 @@
        body {
            margin: 0px;
            padding: 0px;
+           /* background: url(img/1.jpg); */
+       }
+       
+       body::before {
+           content: "";
            background: url(img/1.jpg);
-           background-repeat: no-repeat;
+           position: absolute;
+           height: 100%;
+           top: 0px;
+           left: 0px;
+           width: 100%;
+           z-index: -1;
+           opacity: 0.89;
        }
        
        #header {}
@@ -43,6 +54,7 @@
            font-size: 2.8rem;
            font-family: 'Roboto', sans-serif;
            text-decoration: none;
+           color: blue;
        }
        
        .navbar li a.active {
@@ -51,7 +63,10 @@
        }
        
        .navbar li a:hover {
-           color: rgb(76, 219, 183);
+           color: black;
+           border: ivory;
+           border-radius: 10px;
+           background-color: white;
        }
        
        .item3 {
@@ -61,32 +76,80 @@
            border: solid 3px;
        }
        
-       .bar {
-           /* display: none; */
-           width: 35px;
-           height: 5px;
-           background-color: #ffffff;
-           margin: 6px 0;
-           cursor: pointer;
+       #main-bar {
+           font-size: 18px;
+           color: white;
+           display: block;
+           text-align: center;
+           width: 100rem;
+           margin: 0px auto;
+           border: red solid 2px;
+           border-radius: 13px;
+       }
+       
+       #main-bar .primary-text {
+           font-size: 50px;
+           color: white;
+       }
+       
+       #main-bar .secondary-text {
+           font-family: 'Noto Sans', sans-serif;
+       }
+       
+       #gallery {
+           border: 3px solid red;
+           border-radius: 13px;
+           display: flex;
+           padding: 12px;
+           margin: 13px;
+       }
+       
+       #gallery img {
+           width: 280px;
+           padding: 2px 52px;
        }
        
        @media (max-width:998px) {
            html {
                font-size: 55%;
            }
+           body {
+               background-repeat: repeat-y;
+           }
+           .item2 {
+               position: absolute;
+               right: 0rem;
+               top: 0rem;
+           }
+           .navbar li {
+               padding: 0px 7.4rem;
+           }
            .navbar li a {
-               display: none;
+               color: blue;
+               font-size: 3.6rem;
            }
-           .bar {
+           .item1 {
+               position: absolute;
+               left: 15.4rem;
+               top: 2.4rem;
+           }
+           .item1 img {
+               width: 21.4rem;
+           }
+           #main-bar {
+               font-size: 21px;
+               color: white;
+               display: block;
+               text-align: center;
+               width: 100rem;
+               margin: 266px auto;
+           }
+           #gallery {
                display: block;
            }
-       }
-       
-       @media (max-width:768px) {
-           html {
-               font-size: 45%;
-           }
-           .bar {
-               display: block;
+           #gallery img {
+               width: 100rem;
+               padding: 4px 8px;
+               margin: 17px;
            }
        }
