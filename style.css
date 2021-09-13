@@ -5,13 +5,14 @@
        body {
            margin: 0px;
            padding: 0px;
-           background: url(img/1.jpg);
+           /* background: url(img/1.jpg); */
        }
        
        body::before {
            content: "";
            position: absolute;
-           height: 100%;
+           background: url(img/1.jpg) repeat-y;
+           height: 300%;
            top: 0px;
            left: 0px;
            width: 100%;
@@ -77,12 +78,12 @@
        }
        
        #main-bar {
-           font-size: 18px;
+           font-size: 25px;
            color: white;
            display: block;
            text-align: center;
-           width: 100rem;
-           margin: 0px auto;
+           width: 132rem;
+           margin: 128px auto 96px;
            border: red solid 2px;
            border-radius: 13px;
        }
@@ -96,12 +97,18 @@
            font-family: 'Noto Sans', sans-serif;
        }
        
-       #gallery {
+       .primary-text {
+           font-size: 50px;
+           color: white;
+           text-align: center;
+       }
+       
+       #gallery .gallery-image {
            border: 3px solid red;
            border-radius: 13px;
            display: flex;
            padding: 12px;
-           margin: 13px;
+           margin: 1.3rem;
        }
        
        #gallery img {
@@ -113,8 +120,8 @@
            html {
                font-size: 55%;
            }
-           body {
-               background-repeat: repeat-y;
+           body::before {
+               height: 227%;
            }
            .item2 {
                position: absolute;
@@ -131,7 +138,7 @@
            .item1 {
                position: absolute;
                left: 15.4rem;
-               top: 2.4rem;
+               top: 1.3rem;
            }
            .item1 img {
                width: 21.4rem;
@@ -142,9 +149,9 @@
                display: block;
                text-align: center;
                width: 100rem;
-               margin: 266px auto;
+               margin: 266px auto 0px;
            }
-           #gallery {
+           #gallery .gallery-image {
                display: block;
            }
            #gallery img {
