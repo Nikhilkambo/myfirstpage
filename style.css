@@ -60,7 +60,6 @@
        
        .navbar li a.active {
            color: rgb(76, 219, 183);
-           text-decoration: underline;
        }
        
        .navbar li a:hover {
@@ -121,7 +120,7 @@
                font-size: 55%;
            }
            body::before {
-               height: 227%;
+               height: 233%;
            }
            .item2 {
                position: absolute;
@@ -153,10 +152,11 @@
            }
            #gallery .gallery-image {
                display: block;
+               margin: 6.3rem;
            }
            #gallery img {
-               width: 100rem;
-               padding: 4px 8px;
-               margin: 17px;
+               margin-top: 24px;
+               width: 82rem;
+               padding: 0px 85px;
            }
        }
