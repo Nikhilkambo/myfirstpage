@@ -15,10 +15,10 @@
         </div>
         <div class="item2">
             <ul class="navbar">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#main-bar">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="btn active">Home</a></li>
+                <li><a href="#main-bar" class="btn">About</a></li>
+                <li><a href="#gallery" class="btn">Gallery</a></li>
+                <li><a href="#contact" class="btn">Contact </a></li>
             </ul>
         </div>
         <div class="item3">
@@ -49,6 +49,26 @@
             <div class="4"><img src="img/gallery/4.jpg"></div>
         </div>
     </section>
+    <section id="contact">
+        <div class="container">
+
+        </div>
+
+    </section>
+    <footer id="footer">
+        <div class="footer">Copyright © nikhilkamboj 2021. All right reserved</div>
+    </footer>
+    <script>
+        var header = document.getElementById("header");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
 </body>
 
 </html>
