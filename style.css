@@ -93,7 +93,7 @@
        }
        
        .primary-text {
-           font-size: 50px;
+           font-size: 75px;
            color: white;
            text-align: center;
        }
@@ -195,7 +195,7 @@
                display: block;
                text-align: center;
                width: 100rem;
-               margin: 426px auto 0px;
+               margin: 107px auto 0px;
            }
            #gallery .gallery-image {
                display: block;
