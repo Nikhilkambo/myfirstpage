@@ -206,4 +206,10 @@
                width: 82rem;
                padding: 0px 85px;
            }
+           #contact-box label {
+               font-size: 5.3rem;
+           }
+           #contact-box input {
+               font-size: 4.1rem;
+           }
        }
