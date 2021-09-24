@@ -1,215 +1,252 @@
-       html {
-           font-size: 60.5%;
-           scroll-behavior: smooth;
-       }
-       
-       body {
-           margin: 0px;
-           padding: 0px;
-           background: url(img/1.jpg) no-repeat fixed;
-       }
-       
-       #header {
-           background: #161313ad;
-           display: flex;
-           position: sticky;
-           top: 0px;
-           height: 136px;
-       }
-       
-       .item1 {
-           position: absolute;
-           left: 15.4rem;
-           top: 2.4rem;
-           width: 9.6rem;
-           display: inline-block;
-       }
-       
-       .item1 img {
-           width: 9.4rem;
-           border-radius: 9.5rem;
-       }
-       
-       .item2 {
-           margin: 5.2rem auto;
-           display: block;
-           width: 38%;
-       }
-       
-       .navbar {}
-       
-       .navbar li {
-           display: inline-block;
-           text-align: center;
-           padding: 0px 2.4rem;
-           cursor: pointer;
-           color: rgb(8, 20, 133);
-       }
-       
-       .navbar li a {
-           font-size: 2.8rem;
-           font-family: 'Roboto', sans-serif;
-           text-decoration: none;
-           color: blue;
-       }
-       
-       .navbar li a.active {
-           color: rgb(76, 219, 183);
-       }
-       
-       .navbar li a:hover {
-           color: black;
-           border: ivory;
-           border-radius: 10px;
-           background-color: white;
-       }
-       
-       .item3 {
-           position: absolute;
-           right: 15rem;
-           top: 5.5rem;
-           border: solid 3px;
-       }
-       
-       #main-bar {
-           font-size: 30px;
-           color: white;
-           display: block;
-           text-align: center;
-           width: 132rem;
-           margin: 126px auto 96px;
-           border: red solid 2px;
-           border-radius: 13px;
-           background-color: #1c1d1f8a;
-       }
-       
-       #main-bar .primary-text {
-           font-size: 75px;
-           color: white;
-       }
-       
-       #main-bar .secondary-text {
-           font-family: 'Noto Sans', sans-serif;
-       }
-       
-       .primary-text {
-           font-size: 75px;
-           color: white;
-           text-align: center;
-       }
-       
-       #gallery .gallery-image {
-           border: 3px solid red;
-           border-radius: 13px;
-           display: flex;
-           padding: 12px;
-           margin: 1.3rem;
-       }
-       
-       #gallery img {
-           width: 280px;
-           padding: 2px 52px;
-       }
-       
-       #contact {
-           position: relative;
-       }
-       
-       #contact::before {
-           content: "";
-           position: absolute;
-           width: 100%;
-           height: 100%;
-           z-index: -1;
-           opacity: 0.7;
-           background: #ffffff00;
-       }
-       
-       #contact-box {
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           padding-bottom: 34px;
-       }
-       
-       #contact-box input,
-       #contact-box textarea {
-           width: 100%;
-           padding: 0.5rem;
-           border-radius: 9px;
-           font-size: 1.1rem;
-       }
-       
-       #contact-box form {
-           width: 40%;
-       }
-       
-       #contact-box label {
-           color: white;
-           font-size: 1.3rem;
-           font-family: 'Bree Serif', serif;
-       }
-       
-       #footer {
-           height: 2.5rem;
-           width: 100%;
-           text-align: center;
-           font-size: 20px;
-           background: white;
-       }
-       
-       @media (max-width:998px) {
-           html {
-               font-size: 55%;
-           }
-           body {
-               background-repeat: repeat-y;
-           }
-           #header {
-               height: 330px;
-           }
-           .item1 {
-               left: 44.4rem;
-               top: 10.3rem;
-           }
-           .item1 img {
-               width: 21.4rem;
-           }
-           .item2 {
-               position: absolute;
-               right: 0rem;
-               top: 0rem;
-           }
-           .navbar li {
-               display: flex;
-               flex-direction: column;
-               padding: 0px 7.4rem;
-           }
-           .navbar li a {
-               color: blue;
-               font-size: 6.6rem;
-           }
-           #main-bar {
-               font-size: 25px;
-               color: white;
-               display: block;
-               text-align: center;
-               width: 100rem;
-               margin: 107px auto 0px;
-           }
-           #gallery .gallery-image {
-               display: block;
-               margin: 6.3rem;
-           }
-           #gallery img {
-               margin-top: 24px;
-               width: 82rem;
-               padding: 0px 85px;
-           }
-           #contact-box label {
-               font-size: 5.3rem;
-           }
-           #contact-box input {
-               font-size: 4.1rem;
-           }
-       }
+                           html {
+                               font-size: 60.5%;
+                               scroll-behavior: smooth;
+                           }
+                           
+                           body {
+                               margin: 0px;
+                               padding: 0px;
+                               background: url(img/1.jpg) no-repeat fixed;
+                           }
+                           
+                           #header {
+                               background: #161313ad;
+                               display: flex;
+                               position: sticky;
+                               top: 0px;
+                               height: 136px;
+                           }
+                           
+                           .item1 {
+                               position: absolute;
+                               left: 15.4rem;
+                               top: 2.4rem;
+                               width: 9.6rem;
+                               display: inline-block;
+                           }
+                           
+                           .item1 img {
+                               width: 9.4rem;
+                               border-radius: 9.5rem;
+                           }
+                           
+                           .item2 {
+                               margin: 5.2rem auto;
+                               display: block;
+                               width: 38%;
+                           }
+                           
+                           .navbar {}
+                           
+                           .navbar li {
+                               display: inline-block;
+                               text-align: center;
+                               padding: 0px 2.4rem;
+                               cursor: pointer;
+                               color: rgb(8, 20, 133);
+                           }
+                           
+                           .navbar li a {
+                               font-size: 2.8rem;
+                               font-family: 'Roboto', sans-serif;
+                               text-decoration: none;
+                               color: blue;
+                           }
+                           
+                           .navbar li a.active {
+                               color: rgb(76, 219, 183);
+                           }
+                           
+                           .navbar li a:hover {
+                               color: black;
+                               border: ivory;
+                               border-radius: 10px;
+                               background-color: white;
+                           }
+                           
+                           .item3 {
+                               position: absolute;
+                               right: 15rem;
+                               top: 5.5rem;
+                               border: solid 3px;
+                           }
+                           
+                           #main-bar {
+                               font-size: 30px;
+                               color: white;
+                               display: block;
+                               text-align: center;
+                               width: 132rem;
+                               margin: 126px auto 96px;
+                               border: red solid 2px;
+                               border-radius: 13px;
+                               background-color: #1c1d1f8a;
+                           }
+                           
+                           #main-bar .primary-text {
+                               font-size: 75px;
+                               color: white;
+                           }
+                           
+                           #main-bar .secondary-text {
+                               font-family: 'Noto Sans', sans-serif;
+                           }
+                           
+                           .primary-text {
+                               font-size: 75px;
+                               color: white;
+                               text-align: center;
+                           }
+                           
+                           #gallery .gallery-image {
+                               border: 3px solid red;
+                               border-radius: 13px;
+                               display: flex;
+                               padding: 12px;
+                               margin: 1.3rem;
+                           }
+                           
+                           #gallery img {
+                               width: 280px;
+                               padding: 2px 52px;
+                           }
+                           
+                           #contact {
+                               position: relative;
+                           }
+                           
+                           #contact::before {
+                               content: "";
+                               position: absolute;
+                               width: 100%;
+                               height: 100%;
+                               z-index: -1;
+                               opacity: 0.7;
+                               background: #ffffff00;
+                           }
+                           
+                           #contact-box {
+                               display: flex;
+                               justify-content: center;
+                               align-items: center;
+                               padding-bottom: 34px;
+                           }
+                           
+                           #contact-box input,
+                           #contact-box textarea {
+                               width: 100%;
+                               padding: 0.5rem;
+                               border-radius: 9px;
+                               font-size: 1.1rem;
+                           }
+                           
+                           #contact-box form {
+                               width: 40%;
+                           }
+                           
+                           #contact-box label {
+                               color: white;
+                               font-size: 1.3rem;
+                               font-family: 'Bree Serif', serif;
+                           }
+                           
+                           #footer {
+                               height: 2.5rem;
+                               width: 100%;
+                               text-align: center;
+                               font-size: 20px;
+                               background: white;
+                           }
+                           
+                           @media (max-width: 1580px) {
+                               .item2 {
+                                   width: 50%;
+                               }
+                               #main-bar {
+                                   width: 123rem;
+                               }
+                               #gallery img {
+                                   max-width: 76%;
+                               }
+                           }
+                           
+                           @media (max-width: 1200px) {
+                               html {
+                                   font-size: 55%;
+                               }
+                               .item2 {
+                                   width: 55%;
+                               }
+                               #main-bar {
+                                   width: 105rem;
+                               }
+                               #gallery img {
+                                   max-width: 80%;
+                                   padding: 2px 16px;
+                               }
+                           }
+                           
+                           @media (max-width:992px) {
+                               html {
+                                   font-size: 55%;
+                               }
+                               body {
+                                   background-repeat: repeat-y;
+                               }
+                               #header {
+                                   height: 330px;
+                               }
+                               .item1 {
+                                   left: 44.4rem;
+                                   top: 10.3rem;
+                               }
+                               .item1 img {
+                                   width: 21.4rem;
+                               }
+                               .item2 {
+                                   position: absolute;
+                                   right: 0rem;
+                                   top: 0rem;
+                               }
+                               .navbar li {
+                                   display: flex;
+                                   flex-direction: column;
+                                   padding: 0px 16.4rem;
+                               }
+                               .navbar li a {
+                                   color: blue;
+                                   font-size: 6.6rem;
+                               }
+                               .navbar li a:hover {
+                                   border;
+                               }
+                               #main-bar {
+                                   font-size: 25px;
+                                   color: white;
+                                   display: block;
+                                   text-align: center;
+                                   width: 100rem;
+                                   margin: 107px auto 0px;
+                               }
+                               #gallery .gallery-image {
+                                   display: block;
+                                   margin: 6.3rem;
+                               }
+                               #gallery img {
+                                   margin-top: 24px;
+                                   width: 82rem;
+                                   padding: 0px 85px;
+                               }
+                               #contact-box label {
+                                   font-size: 5.3rem;
+                               }
+                               #contact-box input {
+                                   font-size: 4.1rem;
+                               }
+                           }
+                           
+                           @media (max-width:300px) {
+                               html {
+                                   font-size: 30%;
+                               }
+                           }
